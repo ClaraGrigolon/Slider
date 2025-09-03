@@ -4,6 +4,9 @@ import teniscat1 from './assets/tenis.avif'
 import tcorrida from './assets/tcorrida.avif'
 import tsuede from './assets/tsuede.avif'
 import LogoPuma from './assets/puma-icon-branco.png'
+import LogoInsta from './assets/instagram-icon.svg'
+import LogoFace from './assets/facebook-icon.svg'
+import LogoTiktok from './assets/tiktok-icon.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -49,7 +52,6 @@ function App() {
             <p className="off">- 9%</p>
           </div>
         </a>
-
       </section>
       
       <section className="destaque">
@@ -59,11 +61,18 @@ function App() {
       </section>
       <footer>
 
-        <img src="" alt="" />
+        <img src={LogoPuma} alt="" className="logo-footer" />
+
+        <div className="social-footer">
+          <div className="icon-social"></div>
+          <div className="icon-social"></div>
+          <div className="icon-social"></div>
+        </div>
 
         <p className="txt-footer">
         PUMA SPORTS LTDA CNPJ 05.406.034/0023-00 Inscrição Estadual 278.205.224.119 Endereço: Rua Passadena 104 - Parque Industrial, Cotia - SP CEP: 06715864.
         </p>
+
       </footer>
      </main>
     </>

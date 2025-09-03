@@ -114,10 +114,29 @@ header{
 }
 footer{
   width: 100%;
-  height: auto;
-  background: #333;
+  height: 35vh;
+  background: #111;
   float: left;
 }
-footer img{
-  
+.logo-footer{
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 10%;
+  margin-top: 5vh;
+}
+.social-footer{
+  width: 60%;
+  height: 5vh;
+  float: left;
+  background: #777;
+  margin-left: 5%;
+  margin-top: 6vh;
+}
+.icon-social{
+  width: 20%;
+  height: 5vh;
+  float: left;
+  background: #fff;
+  margin-left: 10%;
 }
