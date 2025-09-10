@@ -8,7 +8,7 @@ main{
 header{
   width: 100%;
   height: 40vh;
-  background: #000;
+  background: yellow;
 }
 .produtos{
   width: 100%;
@@ -127,16 +127,22 @@ footer{
 }
 .social-footer{
   width: 60%;
-  height: 5vh;
+  height: auto;
   float: left;
-  background: #777;
+  /* background: #777; */
   margin-left: 5%;
   margin-top: 6vh;
 }
 .icon-social{
   width: 20%;
-  height: 5vh;
+  height: auto;
   float: left;
-  background: #fff;
+  /* background: #fff; */
   margin-left: 10%;
+}
+.icon-social img{
+  width: 80%;
+  height: auto;
+  filter: invert(100%);
+  margin-top: 2vh;
 }

@@ -7,6 +7,10 @@ import LogoPuma from './assets/puma-icon-branco.png'
 import LogoInsta from './assets/instagram-icon.svg'
 import LogoFace from './assets/facebook-icon.svg'
 import LogoTiktok from './assets/tiktok-icon.svg'
+import Slider1 from './assets/slider1.jpg'
+import Slider2 from './assets/slider2.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +18,29 @@ function App() {
   return (
     <>
      <main>
-      <header></header>
+      <header>
+        {/* Aqui fica o slider */}
+        <Swiper
+        spaceBetween={50}
+        slidesPerView={3}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <img src={Slider1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Slider2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Slider1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src={Slider2} alt="" />
+        </SwiperSlide>
+        ...
+        </Swiper>
+      </header>
       <section className="produtos">
         
         {/* Card 1 */}
@@ -64,9 +90,21 @@ function App() {
         <img src={LogoPuma} alt="" className="logo-footer" />
 
         <div className="social-footer">
-          <div className="icon-social"></div>
-          <div className="icon-social"></div>
-          <div className="icon-social"></div>
+          <div className="icon-social">
+            <a href="https://www.instagram.com/accounts/login/?next=%2Fpumabrasil%2F&source=omni_redirect" target="_blank">
+             <img src={LogoInsta} alt="" className="instagram" />
+            </a>
+          </div> 
+          <div className="icon-social">
+            <a href="https://discord.com/invite/puma" target="_blank">
+              <img src={LogoFace} alt="" className="facebook"/>
+            </a>
+          </div>
+          <div className="icon-social">
+            <a href="https://www.tiktok.com/@puma" target="_blank">
+             <img src={LogoTiktok} alt="" className="tiktok"/>
+            </a>
+          </div>
         </div>
 
         <p className="txt-footer">
